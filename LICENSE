@@ -1,0 +1,35 @@
+Polymosta — Software License Agreement
+
+Copyright (c) 2026 Vorchunello. All rights reserved.
+
+This software, including its source code, design, texts and course programme
+(the "Software"), is proprietary. It is licensed, not sold.
+
+1. You may install and use official builds of the Software for your own
+   personal learning, free of charge, unless a feature is offered as a paid
+   subscription or paid cosmetic item.
+
+2. You may not, without prior written permission from the copyright holder:
+   copy, modify, publish or redistribute the Software or its source code;
+   build, sell or offer other products or services from it; or decompile or
+   reverse engineer it, except where the law allows this regardless of this
+   license.
+
+3. Access to the source code, if any, does not grant any right beyond reading it.
+
+4. Your own data (the Markdown files in your folder) belongs to you.
+
+5. Third-party components and data keep their own licenses, which remain in
+   force and are listed in the app under Settings → About → Licenses. These
+   include open-source libraries, and word lists and dictionaries derived from
+   Wiktionary, FrequencyWords and Octanove under CC BY-SA 4.0: those data files
+   remain available under CC BY-SA 4.0. Books in the built-in library are in the
+   public domain.
+
+6. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. TO THE EXTENT
+   PERMITTED BY LAW, THE COPYRIGHT HOLDER IS NOT LIABLE FOR ANY CLAIM OR DAMAGE
+   ARISING FROM ITS USE. AI-generated content may contain mistakes. Practice
+   tests and scores are not official and are not affiliated with exam organisers.
+
+Versions up to and including 0.6.0 were released under the MIT License. Copies of
+those versions remain under that license; it does not apply to later versions.
