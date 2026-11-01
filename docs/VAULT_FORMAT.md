@@ -97,6 +97,10 @@ A practice test: `examId`, `section`, `lang`, `passage`, `questions`, `minutes` 
 
 Your audio: `title`, `lang`, `duration`, `position` and `cues` (`start`, `end`, `text`, `tr`). The sound itself stays in this device's storage and doesn't sync with the folder.
 
+## `skills/<lang>.md`
+
+Progress in the language tabs of Study: `boxes` maps a card to how well it's known, from 0 to 3.
+
 ## `diction.md`
 
 Best pace per tongue twister (`best`) and twisters the AI wrote (`custom`).
