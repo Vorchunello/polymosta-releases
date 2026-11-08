@@ -1,6 +1,6 @@
 # Polymosta — Privacy Policy
 
-*Last updated: 11 October 2026. Русская версия — ниже.*
+*Last updated: 8 November 2026. Русская версия — ниже.*
 
 Polymosta is a free language-learning app for Windows, Linux and Android. It has no accounts, no advertising, no analytics and no tracking. The developers run no server that receives your data.
 
@@ -11,15 +11,18 @@ Polymosta is a free language-learning app for Windows, Linux and Android. It has
 - **Microphone** (pronunciation practice): audio is recorded only while you press the button and is recognised on the device. It is never uploaded.
 - **Camera, photos and screenshots** (text recognition): images are processed on the device and never uploaded.
 - **Offline dictionaries** are stored on the device.
+- **Progress files** you save stay wherever you put them. Polymosta doesn't send them anywhere.
+- **MCP** (PC, off unless you set it up): a program you connect this way can read your data folder and add words to it.
 
 ## Data that leaves your device — only when you use a feature that needs it
 
 | Feature | What is sent | Where |
 | --- | --- | --- |
-| AI features (word drafts, explanations, stories, translation of book pages, picking words from a text, notes) | The text of the request: the words or text you are working on, your languages, levels and learning goal | The AI provider selected in Settings → AI. By default Pollinations (text.pollinations.ai); alternatively OpenRouter, Groq, OpenAI, DeepSeek, Google Gemini, Anthropic, or a model on your own computer (LM Studio, Ollama) |
+| AI features (word drafts, explanations, stories, translation of book pages, picking words from a text, notes) | The text of the request: the words or text you are working on, your languages, levels and learning goal | The AI provider selected in Settings → AI. By default OVHcloud AI Endpoints (servers in France, oai.endpoints.kepler.ai.cloud.ovh.net); alternatively any provider listed there, or a model on your own computer (LM Studio, Ollama) |
 | Translation without AI | The word or text to translate (and an e-mail address only if you enter one for MyMemory) | The translator selected in Settings → Translator: MyMemory (default), DeepL or a LibreTranslate server you specify |
 | Lessons and exams | The topic, your answers to writing tasks, and, if you choose it, passages from your own book or file | The AI provider selected in Settings → AI |
 | Wiktionary lookups | The word you look up | en.wiktionary.org |
+| Update check (versions from GitHub only, once a day, can be turned off in Settings → About) | Nothing about you: only a request for the list of releases | api.github.com |
 | Audio by link | The address you enter | That website |
 | Web articles in the reader | The address you enter | That website |
 | Downloads | Nothing about you — only the file request | github.com (offline dictionaries), cdn.jsdelivr.net and huggingface.co (speech-recognition and text-recognition models) |
@@ -31,7 +34,8 @@ These services process your requests under their own privacy policies. Polymosta
 
 - **Internet** — for the features above.
 - **Display over other apps** and **foreground service** — only for the optional background word strip (ADHD mode), started and stopped by you.
-- **Microphone** — only for pronunciation practice.
+- **Microphone** — only for pronunciation and conversation practice. Speech is recognised on the device.
+- **Notifications**, **run at startup** and **wake lock** — only for the optional daily reminder, which is off until you turn it on. It is scheduled on the device; nothing is sent anywhere.
 - **Storage** (Android 9 and older only) — to keep your data folder in Documents.
 
 ## Children
@@ -54,14 +58,15 @@ Polymosta — бесплатное приложение для изучения 
 
 **Уходит с устройства — только когда ты пользуешься функцией, которой это нужно:**
 
-- **ИИ-функции** — текст запроса (слова и тексты, с которыми работаешь, языки, уровни, цель) уходит выбранному в настройках ИИ-провайдеру: по умолчанию Pollinations, либо OpenRouter, Groq, OpenAI, DeepSeek, Google Gemini, Anthropic, либо локальная модель на твоём компьютере.
+- **ИИ-функции** — текст запроса (слова и тексты, с которыми работаешь, языки, уровни, цель) уходит выбранному в настройках ИИ-провайдеру: по умолчанию OVHcloud AI Endpoints (серверы во Франции), либо любой другой из списка в настройках, либо локальная модель на твоём компьютере.
 - **Перевод без ИИ** — слово или текст уходит выбранному переводчику (MyMemory, DeepL или твой сервер LibreTranslate).
 - **Викисловарь** — искомое слово уходит на en.wiktionary.org; **статьи по ссылке** — адрес уходит на сайт статьи.
+- **Проверка обновлений** (только версии с GitHub, раз в день, отключается в «Настройки → О программе») — запрос списка релизов на api.github.com, о тебе ничего не передаётся.
 - **Загрузки** (словари, модели распознавания речи и текста) — с github.com, cdn.jsdelivr.net и huggingface.co; о тебе ничего не передаётся.
 - **Жалоба на ответ ИИ** — комментарий, ответ (если приложишь), название провайдера и модели, версия приложения — разработчикам Polymosta (Google Форма) или в виде заполненного issue на GitHub, которое ты отправляешь сам.
 
 Эти сервисы обрабатывают запросы по своим правилам; Polymosta не передаёт им идентификаторов тебя или устройства. Чтобы ничего не уходило с устройства, используй локальную модель (LM Studio, Ollama) и офлайн-словари.
 
-**Разрешения Android:** интернет; показ поверх других приложений и фоновый сервис — только для полоски слов (режим СДВГ), которую ты сам включаешь и выключаешь; микрофон — только для тренировки произношения; память — только на Android 9 и старше.
+**Разрешения Android:** интернет; показ поверх других приложений и фоновый сервис — только для полоски слов (режим СДВГ), которую ты сам включаешь и выключаешь; микрофон — только для тренировки произношения и разговора, речь распознаётся на устройстве; уведомления, запуск после включения телефона и пробуждение — только для напоминания, которое выключено, пока ты его не включишь, и планируется на самом устройстве; память — только на Android 9 и старше.
 
 Приложение не предназначено для детей младше 13 лет. Вопросы — https://github.com/Vorchunello/polymosta-releases/issues.
