@@ -19,7 +19,7 @@ Polymosta is a free language-learning app for Windows, Linux and Android. It has
 | Feature | What is sent | Where |
 | --- | --- | --- |
 | AI features (word drafts, explanations, stories, translation of book pages, picking words from a text, notes) | The text of the request: the words or text you are working on, your languages, levels and learning goal | The AI provider selected in Settings → AI. By default OVHcloud AI Endpoints (servers in France, oai.endpoints.kepler.ai.cloud.ovh.net); alternatively any provider listed there, or a model on your own computer (LM Studio, Ollama) |
-| Translation without AI | The word or text to translate (and an e-mail address only if you enter one for MyMemory) | The translator selected in Settings → Translator: MyMemory (default), DeepL or a LibreTranslate server you specify |
+| Translation without AI | The word or text to translate (and an e-mail address only if you enter one for MyMemory) | The translator selected in Settings → Translator: MyMemory (default), Apertium, Google Cloud Translation, Microsoft Translator, DeepL, LibreTranslate (a server you specify), ModernMT, Yandex Translate, Baidu, NiuTrans, Youdao, Papago or Sarvam. With a key, the provider’s own privacy policy applies |
 | Lessons and exams | The topic, your answers to writing tasks, and, if you choose it, passages from your own book or file | The AI provider selected in Settings → AI |
 | Wiktionary lookups | The word you look up | en.wiktionary.org |
 | Update check (versions from GitHub only, once a day, can be turned off in Settings → About) | Nothing about you: only a request for the list of releases | api.github.com |
@@ -59,7 +59,7 @@ Polymosta — бесплатное приложение для изучения 
 **Уходит с устройства — только когда ты пользуешься функцией, которой это нужно:**
 
 - **ИИ-функции** — текст запроса (слова и тексты, с которыми работаешь, языки, уровни, цель) уходит выбранному в настройках ИИ-провайдеру: по умолчанию OVHcloud AI Endpoints (серверы во Франции), либо любой другой из списка в настройках, либо локальная модель на твоём компьютере.
-- **Перевод без ИИ** — слово или текст уходит выбранному переводчику (MyMemory, DeepL или твой сервер LibreTranslate).
+- **Перевод без ИИ** — слово или текст уходит выбранному переводчику: MyMemory (по умолчанию), Apertium, Google, Microsoft, DeepL, LibreTranslate, ModernMT, Яндекс, Baidu, NiuTrans, Youdao, Papago или Sarvam. С ключом действует политика самого сервиса.
 - **Викисловарь** — искомое слово уходит на en.wiktionary.org; **статьи по ссылке** — адрес уходит на сайт статьи.
 - **Проверка обновлений** (только версии с GitHub, раз в день, отключается в «Настройки → О программе») — запрос списка релизов на api.github.com, о тебе ничего не передаётся.
 - **Загрузки** (словари, модели распознавания речи и текста) — с github.com, cdn.jsdelivr.net и huggingface.co; о тебе ничего не передаётся.
