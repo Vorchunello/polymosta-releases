@@ -51,7 +51,7 @@ examples:
   - { lang: es, text: Buenas noches., tr: Спокойной ночи. }
 tags: [time]
 srs:
-  es: { due: 2026-10-13, interval: 3, ease: 2.5, reps: 2, lapses: 0, last: 2026-10-10 }
+  es: { due: 2026-10-13, interval: 3, ease: 2.5, reps: 2, lapses: 0, last: 2026-10-10, stability: 3.17, difficulty: 5.3, state: 2 }
 created: 2026-10-10
 updated: 2026-10-10
 ---
@@ -60,7 +60,7 @@ Free notes in Markdown. AI explanations you choose to keep are appended here.
 ```
 
 - `terms` — the word in any number of languages. `gender` is `m`, `f`, `n` or `c` (common); `translit` holds a romanization for non-Latin scripts.
-- `srs` — review state per target language, so the same concept can be studied in Spanish and in Arabic independently.
+- `srs` — review state per target language, so the same concept can be studied in Spanish and in Arabic independently. Since 0.11 reviews are scheduled by FSRS-6: `stability` (days until the chance of recalling drops to 90%), `difficulty` (1–10) and `state` (0 new, 1 learning, 2 review, 3 relearning). Older files without them are carried over automatically; `ease` is kept for compatibility.
 
 ## `routes/<lang>.md`
 
@@ -107,7 +107,11 @@ Best pace per tongue twister (`best`) and twisters the AI wrote (`custom`).
 
 ## `known/<lang>.md`
 
-Words you marked *I know it* when picking words from a text — one per line. They are never suggested again. Edit freely.
+Words you marked *I know it* — when picking words from a text or in the reader (*I know it*, *I know the rest*) — one per line. They are never suggested again and count as familiar in the reader and in statistics. Edit freely.
+
+## `stats/reviews-YYYY-MM.md`
+
+The review log, one month per file: every answer in Study is one line, tab-separated — date, card id, language, grade (`again`, `hard`, `good`, `easy`), interval before (days), days since the previous review (−1 for the first), new interval and, since 0.11, the recall probability FSRS predicted before the answer. Statistics (retention, forgetting curve, calibration) are calculated from these files. You can open them in a spreadsheet or delete them; lines that don't parse are ignored.
 
 ## `texts/`
 
