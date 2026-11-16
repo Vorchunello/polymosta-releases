@@ -11,6 +11,8 @@ Polymosta is a free language-learning app for Windows, Linux and Android. It has
 - **Microphone** (pronunciation practice): audio is recorded only while you press the button and is recognised on the device. It is never uploaded.
 - **Camera, photos and screenshots** (text recognition): images are processed on the device and never uploaded.
 - **Offline dictionaries** are stored on the device.
+- **Review log and statistics**: every answer in Study is written to `stats/reviews-YYYY-MM.md` in the data folder (date, card, grade, intervals). Statistics are calculated on the device from it. You can delete these files at any time.
+- **Conversation mistakes** for the AI's memory (below) are kept in the app's settings on the device, not in the data folder; Settings → AI → Forget my mistakes deletes them.
 - **Progress files** you save stay wherever you put them. Polymosta doesn't send them anywhere.
 - **MCP** (PC, off unless you set it up): a program you connect this way can read your data folder and add words to it.
 
@@ -20,6 +22,7 @@ Polymosta is a free language-learning app for Windows, Linux and Android. It has
 | --- | --- | --- |
 | AI features (word drafts, explanations, stories, translation of book pages, picking words from a text, notes) | The text of the request: the words or text you are working on, your languages, levels and learning goal | The AI provider selected in Settings → AI. By default OVHcloud AI Endpoints (servers in France, oai.endpoints.kepler.ai.cloud.ovh.net); alternatively any provider listed there, or a model on your own computer (LM Studio, Ollama) |
 | Translation without AI | The word or text to translate (and an e-mail address only if you enter one for MyMemory) | The translator selected in Settings → Translator: MyMemory (default), Apertium, Google Cloud Translation, Microsoft Translator, DeepL, LibreTranslate (a server you specify), ModernMT, Yandex Translate, Baidu, NiuTrans, Youdao, Papago or Sarvam. With a key, the provider’s own privacy policy applies |
+| AI memory (on by default, Settings → AI → “AI remembers my progress”; you can see exactly what is sent there and turn it off) | A short summary made on the device: how many words you have and know well, up to 8 words you keep forgetting, up to 10 recent words, up to 6 words missed this fortnight, your recent recall rate, up to 5 false friends you noted and up to 6 recent corrected mistakes from conversations; for questions in Notes, up to 6 of your cards that match the question. Sent only with requests that use it: explanations, stories, lessons, conversation, answers to questions, writing feedback, word drafts and word sets — not with translation, exams or adaptation | The AI provider selected in Settings → AI |
 | Lessons and exams | The topic, your answers to writing tasks, and, if you choose it, passages from your own book or file | The AI provider selected in Settings → AI |
 | Wiktionary lookups | The word you look up | en.wiktionary.org |
 | Update check (versions from GitHub only, once a day, can be turned off in Settings → About) | Nothing about you: only a request for the list of releases | api.github.com |
